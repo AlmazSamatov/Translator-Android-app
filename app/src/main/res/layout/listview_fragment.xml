@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/search"
+        android:maxLines="1"
+        android:drawableLeft="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:id="@+id/no_words_in_listview" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/api_info"/>
+
+    <TextView
+        android:id="@+id/api_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/api_info"
+        android:layout_above="@+id/link"
+        android:textSize="19sp"
+        android:textColor="@color/dark"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="@string/link"
+        android:textColorLink="@color/blue"
+        android:textSize="19sp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

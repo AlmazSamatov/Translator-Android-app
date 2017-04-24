@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageButton
+        android:id="@+id/addToFavourites2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@color/transparent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/default_favourites_icon"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.95">
+
+        <TextView
+            android:id="@+id/text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="19sp"
+            android:textColor="@color/dark"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/translation"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/languages"
+        android:layout_width="55dp"
+        android:textSize="18sp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

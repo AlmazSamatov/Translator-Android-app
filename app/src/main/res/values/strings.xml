@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Translator</string>
+    <string name="source_language">Русский</string>
+    <string name="target_language">English</string>
+    <string name="not_found">Error</string>
+    <string name="text_translate">Перевод</string>
+    <string name="text_favourites">Избранное</string>
+    <string name="text_history">История</string>
+    <string name="delete_confirmation_of_favourite_words">Вы уверены, что хотите очистить избранное?</string>
+    <string name="delete_confirmation_of_history_words">Вы уверены, что хотите очистить историю?</string>
+    <string name="history_search_hint">Найти в истории</string>
+    <string name="favourite_search_hint">Найти в избранном</string>
+    <string name="no_words_in_favourites">Нет переводов в избранном</string>
+    <string name="no_words_in_history">Нет переводов в истории</string>
+    <string name="write_word">Введите слово или предложение</string>
+    <string name="api_info">Переведено сервисом «Яндекс.Переводчик»</string>
+    <string name="link">http://translate.yandex.ru/</string>
+</resources>

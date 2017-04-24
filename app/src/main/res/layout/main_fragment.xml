@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Spinner
+        android:id="@+id/languages1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/changeLanguages"
+        android:layout_toStartOf="@+id/changeLanguages"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/changeLanguages" />
+
+    <ImageButton
+        android:id="@+id/changeLanguages"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/change_languages"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/languages2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/languages1"
+        android:layout_toRightOf="@+id/changeLanguages"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/changeLanguages" />
+
+    <EditText
+        android:id="@+id/textToTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:textSize="19sp"
+        android:ems="10"
+        android:maxLines="1"
+        android:inputType="textAutoCorrect"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:hint="@string/write_word"
+        android:layout_below="@+id/languages1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/translatedText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="19sp"
+        android:textColor="@color/dark"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/textToTranslate"
+        android:layout_above="@+id/api_info"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/addToFavourites1" />
+
+    <ImageButton
+        android:id="@+id/addToFavourites1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textToTranslate"
+        android:background="@color/transparent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_favourites_icon"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/api_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/api_info"
+        android:layout_above="@+id/link"
+        android:textSize="19sp"
+        android:textColor="@color/dark"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/link"
+        android:autoLink="web"
+        android:textColorLink="@color/blue"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

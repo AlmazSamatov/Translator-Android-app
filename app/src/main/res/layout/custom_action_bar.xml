@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trash"
+    android:layout_width="39dp"
+    android:layout_height="36dp"
+    android:adjustViewBounds="true"
+    android:background="@color/transparent"
+    android:onClick="TrashOnClick"
+    android:scaleType="fitCenter"
+    android:layout_gravity="right"
+    android:src="@drawable/trash"
+    android:layout_weight="0.02" />
