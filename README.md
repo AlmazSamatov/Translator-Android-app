@@ -7,6 +7,6 @@ Mobile Android app for text translating, which uses Yandex Translator API.
 * Supports 90 languages
 *  Automatically saves text to history
 *  User can add translation to favourites
-*  Supports Russian and English languages
-
+*  Interface translated to Russian and English languages and selected automatically from settings of smartphone
+ 
 ## Screenshots:
