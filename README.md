@@ -10,3 +10,10 @@ Mobile Android app for text translating, which uses Yandex Translator API.
 *  Interface translated to Russian and English languages and selected automatically from settings of smartphone
  
 ## Screenshots:
+
+<p align="center">
+  <img src="/screenshot_1.jpg" width="200"/>
+  <img src="/screenshot_2.jpg" width="200"/>
+  <img src="/screenshot_3.jpg" width="200"/>
+  <img src="/screenshot_4.jpg" width="200"/>
+</p>
