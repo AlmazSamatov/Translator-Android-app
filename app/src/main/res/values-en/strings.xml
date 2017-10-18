@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_translate">Translation</string>
+    <string name="api_info">Translated via "Yandex Translator" service</string>
+    <string name="delete_confirmation_of_favourite_words">Are you sure that you want to clear favourites?</string>
+    <string name="delete_confirmation_of_history_words">Are you sure that you want to clear history?</string>
+    <string name="favourite_search_hint">Find in favourites</string>
+    <string name="history_search_hint">Find in history</string>
+    <string name="no_words_in_favourites">No translations in favourites</string>
+    <string name="no_words_in_history">No translations in history</string>
+    <string name="not_found">Error</string>
+    <string name="source_language">Russian</string>
+    <string name="target_language">English</string>
+    <string name="text_favourites">Favourites</string>
+    <string name="text_history">History</string>
+    <string name="write_word">Enter word or text</string>
+    <string name="app_name">Translator</string>
+    <string name="link" translatable="false">http://translate.yandex.ru/</string>
+</resources>

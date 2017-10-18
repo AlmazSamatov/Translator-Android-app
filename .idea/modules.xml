@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Translator.iml" filepath="$PROJECT_DIR$/Translator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Translator-for-Yandex.iml" filepath="$PROJECT_DIR$/Translator-for-Yandex.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

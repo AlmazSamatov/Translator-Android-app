@@ -1,4 +1,4 @@
-package com.example.einepeople.translator;
+package com.example.almaz.translator;
 
 /**
  * Created by almaz on 12.04.17.
@@ -17,8 +17,13 @@ public class Word {
         this.translation = translation;
         this.sourcePosition = sourcePosition;
         this.targetPosition = targetPosition;
-        sourceLanguage = Languages.lang[sourcePosition * 2 + 1].toUpperCase();
-        targetLanguage = Languages.lang[targetPosition * 2 + 1].toUpperCase();
+        if(Locale.getDefault().getLanguage().equals("en")) {
+            sourceLanguage = Languages.getLangCodeEN(sourcePosition).toUpperCase();
+            targetLanguage = Languages.getLangCodeEN(targetPosition).toUpperCase();    
+        } else{
+            sourceLanguage = Languages.getLangCodeRU(sourcePosition).toUpperCase();
+            targetLanguage = Languages.getLangCodeRU(targetPosition).toUpperCase();
+        }
     }
 
     public String getWord() {
@@ -57,7 +62,7 @@ public class Word {
         return targetPosition;
     }
 
-    public void setTargetPosition(String targetLanguage) {
+    public void setTargetPosition(int targetPosition) {
         this.targetPosition = targetPosition;
     }
 

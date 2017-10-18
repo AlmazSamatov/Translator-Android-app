@@ -1,4 +1,4 @@
-package com.example.einepeople.translator;
+package com.example.almaz.translator;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -20,7 +20,9 @@ import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.widget.RxTextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import retrofit2.Call;
@@ -99,7 +101,7 @@ public class MainFragment extends Fragment {
         editor.putString("textToTranslate", textToTranslate.getText().toString());
         editor.putString("translatedText", translatedText.getText().toString());
         editor.putBoolean("isFavourite", isFavourite);
-        editor.commit();
+        editor.apply();
         super.onDestroyView();
     }
 
@@ -208,8 +210,10 @@ public class MainFragment extends Fragment {
         // Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
 
-        for (int i = 0; i < Languages.lang.length; i += 2) {
-            categories.add(Languages.lang[i]);
+        if(Locale.getDefault().getLanguage().equals("en")) {
+            Collections.addAll(categories, Languages.getLangsEN());
+        } else{
+            Collections.addAll(categories, Languages.getLangsRU());
         }
 
         // Creating adapter for spinner
@@ -292,9 +296,18 @@ public class MainFragment extends Fragment {
 
     public String langCode(String selectedLang) {
         String code = null;
-        for (int i = 0; i < Languages.lang.length; i += 2) {
-            if (Languages.lang[i].equals(selectedLang)) {
-                code = Languages.lang[i + 1];
+
+        if(Locale.getDefault().getLanguage().equals("en")) {
+            for (int i = 0; i < Languages.getLangsEN().length; i++) {
+                if(selectedLang.equals(Languages.getLangsEN()[i])){
+                    code = Languages.getLangCodeEN(i);
+                }
+            }
+        } else{
+            for (int i = 0; i < Languages.getLangsRU().length; i++) {
+                if(selectedLang.equals(Languages.getLangsRU()[i])){
+                    code = Languages.getLangCodeRU(i);
+                }
             }
         }
         return code;

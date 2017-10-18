@@ -1,4 +1,4 @@
-package com.example.einepeople.translator;
+package com.example.almaz.translator;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;

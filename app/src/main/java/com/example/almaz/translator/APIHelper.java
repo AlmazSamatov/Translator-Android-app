@@ -1,4 +1,4 @@
-package com.example.einepeople.translator;
+package com.example.almaz.translator;
 
 import retrofit2.Call;
 import retrofit2.http.POST;

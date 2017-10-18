@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Translator</string>
+    <string name="app_name">Переводчик</string>
     <string name="source_language">Русский</string>
-    <string name="target_language">English</string>
-    <string name="not_found">Error</string>
+    <string name="target_language">Английский</string>
+    <string name="not_found">Ошибка</string>
     <string name="text_translate">Перевод</string>
     <string name="text_favourites">Избранное</string>
     <string name="text_history">История</string>
@@ -12,7 +12,7 @@
     <string name="favourite_search_hint">Найти в избранном</string>
     <string name="no_words_in_favourites">Нет переводов в избранном</string>
     <string name="no_words_in_history">Нет переводов в истории</string>
-    <string name="write_word">Введите слово или предложение</string>
+    <string name="write_word">Введите слово или текст</string>
     <string name="api_info">Переведено сервисом «Яндекс.Переводчик»</string>
     <string name="link">http://translate.yandex.ru/</string>
 </resources>
