@@ -94,7 +94,7 @@ public class MainFragment extends Fragment {
 
     @Override
     public void onDestroyView() {
-        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getActivity().getSharedPreferences("default", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("selection1", spinner1.getSelectedItemPosition());
         editor.putInt("selection2", spinner2.getSelectedItemPosition());
@@ -143,7 +143,7 @@ public class MainFragment extends Fragment {
     }
 
     public void setArgs() {
-        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getActivity().getSharedPreferences("default", Context.MODE_PRIVATE);
         String text = sharedPref.getString("textToTranslate", "");
         String translation = sharedPref.getString("translatedText", "");
         int selection1 = sharedPref.getInt("selection1", 0);

@@ -1,5 +1,7 @@
 package com.example.almaz.translator;
 
+import java.util.Locale;
+
 /**
  * Created by almaz on 12.04.17.
  */
